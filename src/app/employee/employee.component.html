@@ -7,42 +7,42 @@
   <button mat-fab color="primary">Eliminar</button>
   <form novalidate [formGroup]="user" (ngSubmit)="onSubmit()">
     <label>
-      <span>Nombre completo</span>
+      <span>Nombre</span>
       <input
         type="text"
         placeholder="Your full name"
         formControlName="firstName">
     </label><br><br>
     <label>
-      <span>Nombre completo</span>
+      <span>Apellido</span>
       <input
         type="text"
         placeholder="Your full name"
         formControlName="lastName">
     </label><br><br>
     <label>
-      <span>Nombre completo</span>
+      <span>jobPosition</span>
       <input
         type="text"
         placeholder="Your full name"
         formControlName="jobPosition">
     </label><br><br>
     <label>
-      <span>Nombre completo</span>
+      <span>jobCode</span>
       <input
         type="text"
         placeholder="Your full name"
         formControlName="jobCode">
     </label><br><br>
     <label>
-      <span>Nombre completo</span>
+      <span>featured</span>
       <input
         type="text"
         placeholder="Your full name"
         formControlName="featured">
     </label><br><br>
     <label>
-      <span>Correo electronico</span>
+      <span>jobDescription</span>
       <input
         type="text"
         placeholder="Your passwornd"
@@ -60,7 +60,7 @@
         <span matLine>{{employee.jobDescription}}</span>
 
         <button mat-raised-button color="accent">Editar</button>
-        <button mat-raised-button color="warn">Eliminar</button>
+        <button mat-raised-button color="warn" (click)="onBorrar('5')">Eliminar</button>
 
       </mat-list-item>
     </mat-list>
