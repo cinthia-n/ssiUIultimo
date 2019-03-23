@@ -62,7 +62,6 @@ export class EmployeeComponent implements OnInit {
   }
 
   onBorrar2(id: number): Observable<any> {
-    console.log('vamos ');
     console.log(this.url+'/'+id);
 
     // console.log(this.requestService.delete(this.url, id));
@@ -95,18 +94,13 @@ export class EmployeeComponent implements OnInit {
   onBorrar() {
     this.requestService.delete(this.url, 1).subscribe(
       response => {
-        // this.router.navigate(['../'], { relativeTo: this.route });
-        // this.successDeleted(res);
-        //  this.user.reset();
-        //  this.router.navigate(['/compra']);
       },
       error => {
-        console.log('hay errores muchcachos');
         console.log(error);
       }
     );
     console.log( this.user.value);
-    // console.log('ivancete delete');
+
   }
   openRegEmployee() {
     this.dialog.open(RegEmployeeComponent, {width: '500px', height: '450px'});
