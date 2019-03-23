@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiPath              : 'http://localhost:80/inventario/public/api',
 };

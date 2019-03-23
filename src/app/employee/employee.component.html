@@ -3,31 +3,52 @@
     Lista de Empleados
   </h2>
 
-  <a mat-button (click)="openRegEmployee()"><span class="fa fa-sign-in fa-lg"></span> Login</a>
   <button mat-fab color="primary">Nuevo</button>
+  <button mat-fab color="primary">Eliminar</button>
   <form novalidate [formGroup]="user" (ngSubmit)="onSubmit()">
     <label>
-      <span>Full name</span>
+      <span>Nombre completo</span>
       <input
         type="text"
         placeholder="Your full name"
-        formControlName="name">
-    </label>
+        formControlName="firstName">
+    </label><br><br>
     <label>
-      <span>Email address</span>
+      <span>Nombre completo</span>
       <input
-        type="password"
+        type="text"
+        placeholder="Your full name"
+        formControlName="lastName">
+    </label><br><br>
+    <label>
+      <span>Nombre completo</span>
+      <input
+        type="text"
+        placeholder="Your full name"
+        formControlName="jobPosition">
+    </label><br><br>
+    <label>
+      <span>Nombre completo</span>
+      <input
+        type="text"
+        placeholder="Your full name"
+        formControlName="jobCode">
+    </label><br><br>
+    <label>
+      <span>Nombre completo</span>
+      <input
+        type="text"
+        placeholder="Your full name"
+        formControlName="featured">
+    </label><br><br>
+    <label>
+      <span>Correo electronico</span>
+      <input
+        type="text"
         placeholder="Your passwornd"
-        formControlName="password">
-    </label>
-    <label>
-      <span>Confirm address</span>
-      <input
-        type="password"
-        placeholder="Confirm your password"
-        formControlName="passwordRepeat">
-    </label>
-    <button type="submit">Sign up</button>
+        formControlName="jobDescription">
+    </label><br><br>
+    <button type="submit" mat-flat-button color="primary"> Enviar</button>
   </form>
   <div>
 
@@ -76,10 +97,7 @@
       <!--</ng-container>-->
 
 
-      <tr>
-        <td>ljljl</td>
-        <td>jajaja</td>
-      </tr>
+
 
     </table>
 
